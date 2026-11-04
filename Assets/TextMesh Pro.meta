@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro.meta
 guid: f54d1bd14bd3ca042bd867b519fee8cc
+========
+guid: 002af3a1eefb49c45bc761a214936e04
+>>>>>>>> e7dc588f8dc3ae3e52be41b027629a6bb8b1d805:Assets/Characters.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
