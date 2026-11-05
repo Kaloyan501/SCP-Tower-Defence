@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public class MapEntry
 {
     public string mapName;
-    public Sprite image;
+    public Texture2D image;
 
     [TextArea(2, 5)]
     public string description;
