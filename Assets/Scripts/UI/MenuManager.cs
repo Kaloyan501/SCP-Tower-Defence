@@ -28,6 +28,11 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
+        titleScreen.SetActive(true);
+        settings.SetActive(false);
+        mapSelector.SetActive(false);
+
+
         fullscreenToggle.isOn = Screen.fullScreen;
         fullscreenToggle.onValueChanged.AddListener(SetFullscreen);
     }
