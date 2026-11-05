@@ -3,19 +3,20 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject titleScreenPanel;
-    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private GameObject titleScreen;
+    [SerializeField] private GameObject settings;
 
     public void OpenSettings()
     {
-        titleScreenPanel.SetActive(false);
-        settingsPanel.SetActive(true);
+        titleScreen.SetActive(false);
+        settings.SetActive(true);
     }
 
     public void BackToTitle()
     {
-        settingsPanel.SetActive(false);
-        titleScreenPanel.SetActive(true);
+        settings.SetActive(false);
+        mapSelector.SetActive(false);
+        titleScreen.SetActive(true);
     }
 
     public void Quit()
@@ -34,5 +35,13 @@ public class MenuManager : MonoBehaviour
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+    }
+
+    [SerializeField] private GameObject mapSelector;
+
+    public void OpenStart()
+    {
+        titleScreen.SetActive(false);
+        mapSelector.SetActive(true);
     }
 }
